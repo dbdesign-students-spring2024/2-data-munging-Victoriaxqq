@@ -2,7 +2,7 @@
 
 # Read the raw data file 
 import os
-platform_agnostic_file_path = os.path.join('data', 'clean_data.csv')
+platform_agnostic_file_path = os.path.join('data', 'GLB.Ts+dSST.txt')
 with open(platform_agnostic_file_path, 'r')as file:
     lines = file.readlines()
 
