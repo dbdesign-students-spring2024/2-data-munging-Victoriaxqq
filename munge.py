@@ -64,9 +64,9 @@ for line in lines:
             clean_data.append(temp_new)
 
 # Save the data in clean_data.csv in data file
-with open('/Users/quanquanxie/Documents/GitHub/2-data-munging-Victoriaxqq/data/clean_data.csv', 'w') as f:
-    f.write('\n'.join(clean_data))
-
+platform_agnostic_file_path_2 = os.path.join('data', 'clean_data.csv')
+f = open(platform_agnostic_file_path_2, 'w')
+f.write('\n'.join(clean_data))
 
 
 
